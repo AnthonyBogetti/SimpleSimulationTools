@@ -106,15 +106,12 @@ for irep, rep in enumerate(rep_coord_arr):
     enes_refB_arr = np.sort(np.array(enes_refB))[:fracB]
     sumA = np.sum(enes_refA_arr)
     sumB = np.sum(enes_refB_arr)
-    with open("cartesian.dat", "a") as file:
-        if sumA < sumB:
-            next_refs.append("A")
-        elif sumB < sumA:
-            next_refs.append("B")
-        else:
-            next_refs.append("B")
-
-print(next_t, next_k, next_refs)
+    if sumA < sumB:
+        next_refs.append("A")
+    elif sumB < sumA:
+        next_refs.append("B")
+    else:
+        next_refs.append("B")
 
 with open("ladder", "w") as file:
     for idx, rep in enumerate(reps):

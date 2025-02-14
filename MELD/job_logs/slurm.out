@@ -1,0 +1,2025 @@
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:16:18
+| Available memory: 86.147 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 1.0081634007555278 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 46134 )
+    SETVELOCITY: Scaling velocities by X= 1.00816, Y= 1.00816, Z= 1.00816
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0081634007555278 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 85.1499 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.20%)
+TIME:		Trajectory Process : 0.0117 s ( 99.42%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.01%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0118 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0287 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:16:18
+| Available memory: 86.145 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 0.9919027007433419 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 25397 )
+    SETVELOCITY: Scaling velocities by X= 0.991903, Y= 0.991903, Z= 0.991903
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9919027007433419 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 52.0508 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.06%)
+TIME:		Trajectory Process : 0.0192 s ( 99.77%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0193 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0352 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.5581734073969824 1.0344893754601627
+[300.0, 310.0, 305.0, 315.0] [1.0, 0.5, 1.0, 0.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:16:47
+| Available memory: 86.152 GB
+
+INPUT: Reading input from 'rescale.cpp.000'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.000]
+	Reading 'meld.rst.000' as Amber Restart
+  [setvelocity scale factor 1.0165300454651272 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22876 )
+    SETVELOCITY: Scaling velocities by X= 1.01653, Y= 1.01653, Z= 1.01653
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.000 ncrestart]
+	Writing 'meld.rst.000' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.000' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.000' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0165300454651272 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.000 (coordinates, velocities, time)
+----- meld.rst.000 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 173.0104 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.22%)
+TIME:		Trajectory Process : 0.0058 s ( 99.45%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0058 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0204 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:16:47
+| Available memory: 86.150 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 0.9837387536759294 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22496 )
+    SETVELOCITY: Scaling velocities by X= 0.983739, Y= 0.983739, Z= 0.983739
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9837387536759294 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 194.0241 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.23%)
+TIME:		Trajectory Process : 0.0052 s ( 99.42%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0052 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0203 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:16:47
+| Available memory: 86.150 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 1.0162612288412374 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 21559 )
+    SETVELOCITY: Scaling velocities by X= 1.01626, Y= 1.01626, Z= 1.01626
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0162612288412374 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 200.1201 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.26%)
+TIME:		Trajectory Process : 0.0050 s ( 99.34%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0050 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0193 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:16:47
+| Available memory: 86.150 GB
+
+INPUT: Reading input from 'rescale.cpp.003'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.003]
+	Reading 'meld.rst.003' as Amber Restart
+  [setvelocity scale factor 0.9839989676081822 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22619 )
+    SETVELOCITY: Scaling velocities by X= 0.983999, Y= 0.983999, Z= 0.983999
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.003 ncrestart]
+	Writing 'meld.rst.003' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.003' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.003' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9839989676081822 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.003 (coordinates, velocities, time)
+----- meld.rst.003 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 176.5848 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.21%)
+TIME:		Trajectory Process : 0.0057 s ( 99.21%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0057 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0205 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.025752245934214546 1.3778427050305344
+0.221231780312667 1.6711751287826238
+[310.0, 300.0, 315.0, 305.0] [0.5, 1.0, 0.0, 1.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:17:16
+| Available memory: 86.121 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 1.02469507659596 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 21998 )
+    SETVELOCITY: Scaling velocities by X= 1.0247, Y= 1.0247, Z= 1.0247
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.02469507659596 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 191.2046 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.27%)
+TIME:		Trajectory Process : 0.0052 s ( 99.39%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0053 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0204 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:17:16
+| Available memory: 86.121 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 0.9759000729485332 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22503 )
+    SETVELOCITY: Scaling velocities by X= 0.9759, Y= 0.9759, Z= 0.9759
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9759000729485332 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 169.8081 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.20%)
+TIME:		Trajectory Process : 0.0059 s ( 99.24%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0059 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0204 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.10305458896647601 10.369941037835586
+[310.0, 315.0, 300.0, 305.0] [0.5, 0.0, 1.0, 1.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:17:45
+| Available memory: 86.129 GB
+
+INPUT: Reading input from 'rescale.cpp.000'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.000]
+	Reading 'meld.rst.000' as Amber Restart
+  [setvelocity scale factor 1.0080322575483707 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 23028 )
+    SETVELOCITY: Scaling velocities by X= 1.00803, Y= 1.00803, Z= 1.00803
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.000 ncrestart]
+	Writing 'meld.rst.000' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.000' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.000' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0080322575483707 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.000 (coordinates, velocities, time)
+----- meld.rst.000 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 178.7949 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.23%)
+TIME:		Trajectory Process : 0.0056 s ( 99.17%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0056 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0204 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:17:45
+| Available memory: 86.129 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 0.9920317455237933 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 21397 )
+    SETVELOCITY: Scaling velocities by X= 0.992032, Y= 0.992032, Z= 0.992032
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9920317455237933 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 206.7825 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.25%)
+TIME:		Trajectory Process : 0.0048 s ( 99.38%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0049 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0194 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:17:45
+| Available memory: 86.127 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 1.0082988974836116 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 23396 )
+    SETVELOCITY: Scaling velocities by X= 1.0083, Y= 1.0083, Z= 1.0083
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0082988974836116 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 170.2128 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.20%)
+TIME:		Trajectory Process : 0.0059 s ( 99.26%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0059 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0213 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:17:45
+| Available memory: 86.127 GB
+
+INPUT: Reading input from 'rescale.cpp.003'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.003]
+	Reading 'meld.rst.003' as Amber Restart
+  [setvelocity scale factor 0.9917694073609294 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22311 )
+    SETVELOCITY: Scaling velocities by X= 0.991769, Y= 0.991769, Z= 0.991769
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.003 ncrestart]
+	Writing 'meld.rst.003' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.003' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.003' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9917694073609294 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.003 (coordinates, velocities, time)
+----- meld.rst.003 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 210.7482 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.25%)
+TIME:		Trajectory Process : 0.0047 s ( 99.39%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0048 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0196 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.9570723794661518 1.567629154911345
+0.13790046556398317 0.5890951638775875
+[315.0, 310.0, 305.0, 300.0] [0.0, 0.5, 1.0, 1.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:18:14
+| Available memory: 86.145 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 0.9919027007433419 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 24226 )
+    SETVELOCITY: Scaling velocities by X= 0.991903, Y= 0.991903, Z= 0.991903
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9919027007433419 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 166.9170 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.22%)
+TIME:		Trajectory Process : 0.0060 s ( 99.50%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0060 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0212 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:18:14
+| Available memory: 86.144 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 1.0081634007555278 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22566 )
+    SETVELOCITY: Scaling velocities by X= 1.00816, Y= 1.00816, Z= 1.00816
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0081634007555278 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 189.4657 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.23%)
+TIME:		Trajectory Process : 0.0053 s ( 99.43%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0053 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0207 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.4844732927860126 1.129561304411238
+[315.0, 305.0, 310.0, 300.0] [0.0, 1.0, 0.5, 1.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:18:44
+| Available memory: 86.144 GB
+
+INPUT: Reading input from 'rescale.cpp.000'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.000]
+	Reading 'meld.rst.000' as Amber Restart
+  [setvelocity scale factor 0.9839989676081822 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 24547 )
+    SETVELOCITY: Scaling velocities by X= 0.983999, Y= 0.983999, Z= 0.983999
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.000 ncrestart]
+	Writing 'meld.rst.000' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.000' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.000' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9839989676081822 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.000 (coordinates, velocities, time)
+----- meld.rst.000 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 168.6625 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.22%)
+TIME:		Trajectory Process : 0.0059 s ( 99.21%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0060 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0225 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:18:44
+| Available memory: 86.143 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 1.0162612288412374 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22688 )
+    SETVELOCITY: Scaling velocities by X= 1.01626, Y= 1.01626, Z= 1.01626
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0162612288412374 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 149.9026 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.18%)
+TIME:		Trajectory Process : 0.0067 s ( 99.32%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0067 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0216 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.41132686754582415 3.0759893882857328
+0.35240319928877384 0.1733267480410002
+[305.0, 315.0, 310.0, 300.0] [1.0, 0.0, 0.5, 1.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:19:13
+| Available memory: 86.124 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 0.9920317455237933 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 23486 )
+    SETVELOCITY: Scaling velocities by X= 0.992032, Y= 0.992032, Z= 0.992032
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9920317455237933 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 159.7189 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.21%)
+TIME:		Trajectory Process : 0.0063 s ( 99.51%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0063 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0229 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:19:13
+| Available memory: 86.124 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 1.0080322575483707 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22377 )
+    SETVELOCITY: Scaling velocities by X= 1.00803, Y= 1.00803, Z= 1.00803
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0080322575483707 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 175.4386 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.21%)
+TIME:		Trajectory Process : 0.0057 s ( 99.22%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0057 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0204 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.30247574840829106 1.7195326745490969
+[305.0, 310.0, 315.0, 300.0] [1.0, 0.5, 0.0, 1.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:19:43
+| Available memory: 86.119 GB
+
+INPUT: Reading input from 'rescale.cpp.000'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.000]
+	Reading 'meld.rst.000' as Amber Restart
+  [setvelocity scale factor 1.0081634007555278 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22573 )
+    SETVELOCITY: Scaling velocities by X= 1.00816, Y= 1.00816, Z= 1.00816
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.000 ncrestart]
+	Writing 'meld.rst.000' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.000' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.000' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0081634007555278 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.000 (coordinates, velocities, time)
+----- meld.rst.000 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 194.5147 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.23%)
+TIME:		Trajectory Process : 0.0051 s ( 99.09%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0052 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0203 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:19:43
+| Available memory: 86.118 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 0.9919027007433419 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22887 )
+    SETVELOCITY: Scaling velocities by X= 0.991903, Y= 0.991903, Z= 0.991903
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9919027007433419 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 159.9744 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.19%)
+TIME:		Trajectory Process : 0.0063 s ( 99.29%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0063 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0217 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:19:43
+| Available memory: 86.116 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 0.9759000729485332 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22803 )
+    SETVELOCITY: Scaling velocities by X= 0.9759, Y= 0.9759, Z= 0.9759
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9759000729485332 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 157.2327 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.20%)
+TIME:		Trajectory Process : 0.0064 s ( 99.30%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0064 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0222 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:19:43
+| Available memory: 86.116 GB
+
+INPUT: Reading input from 'rescale.cpp.003'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.003]
+	Reading 'meld.rst.003' as Amber Restart
+  [setvelocity scale factor 1.02469507659596 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 21963 )
+    SETVELOCITY: Scaling velocities by X= 1.0247, Y= 1.0247, Z= 1.0247
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.003 ncrestart]
+	Writing 'meld.rst.003' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.003' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.003' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.02469507659596 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.003 (coordinates, velocities, time)
+----- meld.rst.003 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 164.9893 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.21%)
+TIME:		Trajectory Process : 0.0061 s ( 99.26%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0061 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0209 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.9010635798621414 1.3547806348497458
+0.21141622034822327 0.2859492905258589
+[310.0, 305.0, 300.0, 315.0] [0.5, 1.0, 1.0, 0.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+0.5745605958549881 0.5481078804833436
+[310.0, 305.0, 300.0, 315.0] [0.5, 1.0, 1.0, 0.0] ['B', 'B', 'B', 'B']
+
+ Running multipmemd version of pmemd Amber24
+    Total processors =     4
+    Number of groups =     4
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:20:41
+| Available memory: 86.167 GB
+
+INPUT: Reading input from 'rescale.cpp.000'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.000]
+	Reading 'meld.rst.000' as Amber Restart
+  [setvelocity scale factor 0.9919027007433419 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22145 )
+    SETVELOCITY: Scaling velocities by X= 0.991903, Y= 0.991903, Z= 0.991903
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.000 ncrestart]
+	Writing 'meld.rst.000' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.000' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.000' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9919027007433419 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.000 (coordinates, velocities, time)
+----- meld.rst.000 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 182.7151 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.24%)
+TIME:		Trajectory Process : 0.0055 s ( 99.13%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.02%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0055 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0202 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:20:42
+| Available memory: 86.167 GB
+
+INPUT: Reading input from 'rescale.cpp.001'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.001]
+	Reading 'meld.rst.001' as Amber Restart
+  [setvelocity scale factor 1.0081634007555278 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 23306 )
+    SETVELOCITY: Scaling velocities by X= 1.00816, Y= 1.00816, Z= 1.00816
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.001 ncrestart]
+	Writing 'meld.rst.001' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.001' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.001' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.0081634007555278 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.001 (coordinates, velocities, time)
+----- meld.rst.001 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 161.0825 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.22%)
+TIME:		Trajectory Process : 0.0062 s ( 99.22%)
+TIME:		Action Post        : 0.0000 s (  0.02%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.02%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0063 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0221 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:20:42
+| Available memory: 86.165 GB
+
+INPUT: Reading input from 'rescale.cpp.002'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.002]
+	Reading 'meld.rst.002' as Amber Restart
+  [setvelocity scale factor 1.02469507659596 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22355 )
+    SETVELOCITY: Scaling velocities by X= 1.0247, Y= 1.0247, Z= 1.0247
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.002 ncrestart]
+	Writing 'meld.rst.002' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.002' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.002' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 1.02469507659596 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.002 (coordinates, velocities, time)
+----- meld.rst.002 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 150.9206 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.16%)
+TIME:		Trajectory Process : 0.0066 s ( 99.33%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.0067 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0220 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 02/14/25 14:20:42
+| Available memory: 86.164 GB
+
+INPUT: Reading input from 'rescale.cpp.003'
+  [parm ../../common_files/4ake.prmtop]
+	Reading '../../common_files/4ake.prmtop' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin meld.rst.003]
+	Reading 'meld.rst.003' as Amber Restart
+  [setvelocity scale factor 0.9759000729485332 ntc 2]
+	RNG: Marsaglia
+Random_Number: seed is <= 0, using wallclock time as seed ( 22432 )
+    SETVELOCITY: Scaling velocities by X= 0.9759, Y= 0.9759, Z= 0.9759
+	Constraints on bonds to H
+	Time step= 0.002 ps, epsilon = 1e-07
+  [trajout meld.rst.003 ncrestart]
+	Writing 'meld.rst.003' as Amber NC Restart
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 4ake.prmtop, 3341 atoms, 214 res, box: None, 1 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'meld.rst.003' is an AMBER restart file with velocity info, Parm 4ake.prmtop (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'meld.rst.003' (1 frames) is a NetCDF AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '4ake.prmtop' (1 actions):
+  0: [setvelocity scale factor 0.9759000729485332 ntc 2]
+	Mask [*] corresponds to 3341 atoms.
+	Constraints on 1685 bonds to hydrogen.
+	# of degrees of freedom = 8338
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  meld.rst.003 (coordinates, velocities, time)
+----- meld.rst.003 (1-1, 1) -----
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 166.8335 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.20%)
+TIME:		Trajectory Process : 0.0060 s ( 99.27%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0000 s (  0.01%)
+TIME:	Run Total 0.0060 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0211 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+0.2136299913169204 0.582545888337175
+0.06243309306734157 0.5756176661167396
+[305.0, 310.0, 315.0, 300.0] [1.0, 0.5, 0.0, 1.0] ['B', 'B', 'B', 'B']

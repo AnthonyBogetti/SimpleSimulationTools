@@ -27,6 +27,8 @@ reps = ladder[:,0]
 temps = ladder[:,1]
 enes = []
 
+print(reps, temps)
+
 for rep in reps:
     irep = str(int(rep)).zfill(3)
     with open("meld.ene.%s"%irep, "r") as file:
@@ -47,21 +49,24 @@ success = 0
 attempt = 0
 
 
-for rep in reps:
+for idx, rep in enumerate(reps):
     if rep in reps_to_consider:
         rep = int(rep)
         try:
-            temp1 = float(temps[rep])
-            epot1 = enes[rep]
-            temp2 = float(temps[rep+1])
-            epot2 = enes[rep+1]
+            nrep = int(reps[idx+1])
+            print(rep, nrep)
+            temp1 = float(temps[idx])
+            epot1 = enes[idx]
+            temp2 = float(temps[idx+1])
+            epot2 = enes[idx+1]
+            print(temp1, temp2)
             metro = np.exp(((1/(kb*temp1))-(1/(kb*temp2)))*(epot1-epot2))
             rand = np.random.rand()
             attempt += 1
             print(rand, metro)
             if rand < metro:
+                new_ladder.append([nrep, temp1])
                 new_ladder.append([rep, temp2])
-                new_ladder.append([rep+1, temp1])
                 success += 1
                 scale1 = np.sqrt(temp2/temp1)
                 scale2 = np.sqrt(temp1/temp2)
@@ -72,20 +77,21 @@ for rep in reps:
                 replace_scale1 = "s/FFF/%s/g"%scale1
                 replace_scale2 = "s/FFF/%s/g"%scale2
 
-                with open("rescale.cpp."+rst1, "w") as file:
-                    subprocess.run(['sed', '-e', replace_rst1, '-e', replace_scale1, 'rescale.cpp'], stdout=file, text=True)
-
-                with open("rescale.cpp."+rst2, "w") as file:
-                    subprocess.run(['sed', '-e', replace_rst2, '-e', replace_scale2, 'rescale.cpp'], stdout=file, text=True)
-
-                subprocess.run(['cpptraj', '-i', 'rescale.cpp.%s'%rst1])
-                subprocess.run(['cpptraj', '-i', 'rescale.cpp.%s'%rst2])
-
-                os.remove('rescale.cpp.%s'%rst1)
-                os.remove('rescale.cpp.%s'%rst2)
+#                with open("rescale.cpp."+rst1, "w") as file:
+#                    subprocess.run(['sed', '-e', replace_rst1, '-e', replace_scale1, 'rescale.cpp'], stdout=file, text=True)
+#
+#                with open("rescale.cpp."+rst2, "w") as file:
+#                    subprocess.run(['sed', '-e', replace_rst2, '-e', replace_scale2, 'rescale.cpp'], stdout=file, text=True)
+#
+#                subprocess.run(['cpptraj', '-i', 'rescale.cpp.%s'%rst1])
+#                subprocess.run(['cpptraj', '-i', 'rescale.cpp.%s'%rst2])
+#
+#                os.remove('rescale.cpp.%s'%rst1)
+#                os.remove('rescale.cpp.%s'%rst2)
 
             else:
                 new_ladder.append([rep, temp1])
+                new_ladder.append([nrep, temp2])
 
         except:
             new_ladder.append([rep, float(temps[rep])])

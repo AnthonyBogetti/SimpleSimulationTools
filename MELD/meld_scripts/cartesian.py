@@ -8,6 +8,7 @@ import sys
 status = sys.argv[1]
 exchange = int(sys.argv[2])
 prev_exchange = str((exchange-1)).zfill(5)
+frac = float(sys.argv[3])
 
 def calc_E(rep_coords, ref_coords, k):
     dx2 = (rep_coords[0] - ref_coords[0])**2
@@ -28,7 +29,7 @@ with open("../../common_files/ladder", "r") as file:
     lines = file.readlines()
     for line in lines:
         t = float("{:.2f}".format(float(line.split()[1])))
-        k = float("{:.2f}".format(float(line.split()[2])))
+        k = float(line.split()[2])
         entries.append(tuple([t, k]))
 
 tandk = dict(entries)
@@ -47,7 +48,7 @@ with open(prev_ladder, "r") as file:
     lines = file.readlines()
     for line in lines:
         curr_t.append(float("{:.2f}".format(float(line.split()[1]))))
-        curr_k.append(float("{:.2f}".format(float(line.split()[2]))))
+        curr_k.append(float(line.split()[2]))
 
 with open("ladder", "r") as file:
     lines = file.readlines()
@@ -58,9 +59,7 @@ with open("ladder", "r") as file:
 
 ref_folder_path = "../../common_files/refs"
 
-atoms = ["CA", "C", "O", "N"]
-
-frac = 1.0
+atoms = ["CA"]
 
 ref_coords = []
 
@@ -93,6 +92,7 @@ for filename in sorted(glob.glob(os.path.join(".", "meld.pdb.*"))):
 rep_coord_arr = np.array(rep_coords, dtype=float)
 
 next_refs = []
+next_sels = []
 
 for irep, rep in enumerate(rep_coord_arr):
     enes_refA = []
@@ -100,19 +100,39 @@ for irep, rep in enumerate(rep_coord_arr):
     for iatom, atom in enumerate(rep):
         enes_refA.append(calc_E(ref_coord_arr[0][iatom], atom, curr_k[irep]))
         enes_refB.append(calc_E(ref_coord_arr[1][iatom], atom, curr_k[irep]))
+    resi = np.arange(1,len(enes_refA)+1)
     fracA = int(len(enes_refA)*frac)
     fracB = int(len(enes_refB)*frac)
-    enes_refA_arr = np.sort(np.array(enes_refA))[:fracA]
-    enes_refB_arr = np.sort(np.array(enes_refB))[:fracB]
+    sortA = np.argsort(np.array(enes_refA))[:fracA]
+    sortB = np.argsort(np.array(enes_refB))[:fracB]
+    enes_refA_arr = np.array(enes_refA)[sortA]
+    enes_refB_arr = np.array(enes_refB)[sortB]
+    res_refA = resi[sortA]
+    res_refB = resi[sortB]
     sumA = np.sum(enes_refA_arr)
     sumB = np.sum(enes_refB_arr)
     if sumA < sumB:
         next_refs.append("A")
+        sel_str = ':'
+        for res_ref in res_refA:
+            sel_str += str(res_ref)+','
+        sel_str += '@CA'
+        next_sels.append(sel_str)
     elif sumB < sumA:
         next_refs.append("B")
+        sel_str = ':'
+        for res_ref in res_refB:
+            sel_str += str(res_ref)+','
+        sel_str += '@CA'
+        next_sels.append(sel_str)
     else:
         next_refs.append("B")
+        sel_str = ':'
+        for res_ref in res_refB:
+            sel_str += str(res_ref)+','
+        sel_str += '@CA'
+        next_sels.append(sel_str)
 
 with open("ladder", "w") as file:
     for idx, rep in enumerate(reps):
-        file.write(str(rep)+" "+str(next_t[idx])+" "+str(next_k[idx])+" "+str(next_refs[idx])+"\n")
+        file.write(str(rep)+" "+str(next_t[idx])+" "+str(next_k[idx])+" "+str(next_refs[idx])+" "+str(next_sels[idx])+"\n")

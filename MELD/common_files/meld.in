@@ -9,7 +9,7 @@
    ntc= 2, ntf = 2, cut = 1000,           
    igb=8, gbsa=3, ntb = 0, 
    saltcon=0., nmropt=1,
-   ntr=1, restraint_wt=KKKKK, restraintmask='@CA,C,N,O'
+   ntr=1, restraint_wt=KKKKK, restraintmask='SSSSS',
  /
  &wt TYPE='END'
  /

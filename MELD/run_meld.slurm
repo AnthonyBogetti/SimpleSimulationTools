@@ -12,6 +12,7 @@ module load amber cuda12.2 openmpi
 
 N_REPS=4
 TOTAL_X=10
+FRAC=0.1
 
 if [ -z "$( ls -A 'rep_segs' )" ]; then
     if [ -s meld.log ]; then
@@ -66,10 +67,10 @@ while [ $X -lt $TOTAL_X ]; do
 
     if (( X == 1 )); then 
         python exchange.py new $X
-	python cartesian.py new $X
+	python cartesian.py new $X $FRAC
     else
         python exchange.py cont $X
-	python cartesian.py cont $X
+	python cartesian.py cont $X $FRAC
     fi
 
     CHECK=$(cat ladder | wc -l)

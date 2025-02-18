@@ -16,6 +16,30 @@ def calc_E(rep_coords, ref_coords, k):
     dz2 = (rep_coords[2] - ref_coords[2])**2
     return (k*dx2+k*dy2+k*dz2)
 
+def convert_list_to_string(numbers):
+    numbers.sort()
+    ranges = []
+    start = numbers[0]
+    end = numbers[0]
+
+    for i in range(1, len(numbers)):
+        if numbers[i] == end + 1:
+            end = numbers[i]
+        else:
+            if start == end:
+                ranges.append(f"{start}")
+            else:
+                ranges.append(f"{start}-{end}")
+            start = numbers[i]
+            end = numbers[i]
+
+    if start == end:
+        ranges.append(f"{start}")
+    else:
+        ranges.append(f"{start}-{end}")
+
+    return ",".join(ranges)
+
 ladder = np.loadtxt("ladder", dtype=str)
 reps = ladder[:,0]
 for rep in reps:
@@ -114,22 +138,22 @@ for irep, rep in enumerate(rep_coord_arr):
     if sumA < sumB:
         next_refs.append("A")
         sel_str = ':'
-        for res_ref in res_refA:
-            sel_str += str(res_ref)+','
+        string = convert_list_to_string(list(res_refA))
+        sel_str += string
         sel_str += '@CA'
         next_sels.append(sel_str)
     elif sumB < sumA:
         next_refs.append("B")
         sel_str = ':'
-        for res_ref in res_refB:
-            sel_str += str(res_ref)+','
+        string = convert_list_to_string(list(res_refB))
+        sel_str += string
         sel_str += '@CA'
         next_sels.append(sel_str)
     else:
         next_refs.append("B")
         sel_str = ':'
-        for res_ref in res_refB:
-            sel_str += str(res_ref)+','
+        string = convert_list_to_string(list(res_refB))
+        sel_str += string
         sel_str += '@CA'
         next_sels.append(sel_str)
 

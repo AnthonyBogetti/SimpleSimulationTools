@@ -12,7 +12,7 @@ module load amber cuda12.2 openmpi
 
 N_REPS=4
 TOTAL_X=10
-FRAC=0.1
+FRAC=0.3
 
 if [ -z "$( ls -A 'rep_segs' )" ]; then
     if [ -s meld.log ]; then

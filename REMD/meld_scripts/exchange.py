@@ -94,7 +94,7 @@ for idx, rep in enumerate(reps):
                 new_ladder.append([nrep, temp2])
 
         except:
-            new_ladder.append([rep, float(temps[rep])])
+            new_ladder.append([rep, float(temps[idx])])
             continue
     else:
         rep = int(rep)
@@ -104,9 +104,9 @@ for idx, rep in enumerate(reps):
             if float(rep) in np.array(new_ladder)[:,0]:
                 continue
             else:
-                new_ladder.append([rep, float(temps[rep])])
+                new_ladder.append([rep, float(temps[idx])])
         else:
-            new_ladder.append([rep, float(temps[rep])])
+            new_ladder.append([rep, float(temps[idx])])
 
 
 with open("ladder", "w") as file:

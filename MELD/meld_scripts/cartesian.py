@@ -81,6 +81,9 @@ with open("ladder", "r") as file:
         next_t.append(t)
         next_k.append(tandk[t])
 
+print(curr_t, curr_k)
+print(next_t, next_k)
+
 ref_folder_path = "../../common_files/refs"
 
 atoms = ["CA"]

@@ -21,11 +21,17 @@ for rep_dir in os.listdir(root_dir):
 sorted_paths = (sorted(paths))
 
 otemps = np.loadtxt("../common_files/ladder", usecols=1)
+oks = np.loadtxt("../common_files/ladder", usecols=2)
 
 for t in otemps:
     plt.axhline(y=t, color="k", alpha=0.1)
 
-plt.yticks(otemps)
+new_labels = []
+
+for i, t in enumerate(otemps):
+    new_labels.append(str(t)+"/"+str(oks[i]))
+
+plt.yticks(otemps, labels=new_labels)
 
 n_reps = len(otemps)
 

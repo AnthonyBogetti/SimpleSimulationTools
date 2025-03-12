@@ -1,6 +1,6 @@
  &cntrl
    ntx = 5,                              
-   ntwx = 5000, ntwe = 5000, ntwr = 5000,     
+   ntwx = 5000, ntwe = 50000, ntwr = 50000,     
    ntpr = 5000,                 
    ioutfm=0, ntxo=1, 
    imin = 0, nstlim = 50000, dt = 0.002, 

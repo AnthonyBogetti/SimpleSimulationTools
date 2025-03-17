@@ -8,3 +8,6 @@ Currently available modules:
 
 Planned modules:
 - Weighted ensemble (WE)
+
+Dependencies:
+- MELD requires ProDy and numba, both installable through conda-forge.

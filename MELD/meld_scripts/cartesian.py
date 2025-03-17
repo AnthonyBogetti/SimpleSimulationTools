@@ -48,8 +48,8 @@ def convert_list_to_string(numbers):
     return ",".join(ranges)
 
 ladder = np.loadtxt("ladder", dtype=str)
-reps = ladder[:,0]
-for rep in reps:
+reps_next = ladder[:,0]
+for rep in reps_next:
     repi = str(rep).zfill(3)
     with open("meld"+repi+".pdb", "w") as file:
         subprocess.run(['ambpdb', '-p', '../../common_files/4ake.prmtop', '-c', 'meld.rst.'+repi], stdout=file)
@@ -188,5 +188,5 @@ for irep, rep in enumerate(reps):
         next_sels.append(sel_str)
 
 with open("ladder", "w") as file:
-    for idx, rep in enumerate(reps):
-        file.write(str(idx)+" "+str(next_t[idx])+" "+str(next_k[idx])+" "+str(next_refs[idx])+" "+str(next_sels[idx])+"\n")
+    for idx, rep in enumerate(reps_next):
+        file.write(str(rep)+" "+str(next_t[idx])+" "+str(next_k[idx])+" "+str(next_refs[idx])+" "+str(next_sels[idx])+"\n")

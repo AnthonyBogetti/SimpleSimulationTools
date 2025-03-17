@@ -139,8 +139,9 @@ next_sels = []
 for irep, rep in enumerate(reps):
 #    enes_refA = []
 #    enes_refB = []
+    rep2 = rep.copy()
     rep_ali_refA, T = superpose(rep, refs[0])
-    rep_ali_refB, T = superpose(rep, refs[1])
+    rep_ali_refB, T = superpose(rep2, refs[1])
     refA_coords = refs[0].getCoords()
     refB_coords = refs[1].getCoords()
     rep_ali_refA_coords = rep_ali_refA.getCoords()
@@ -148,8 +149,8 @@ for irep, rep in enumerate(reps):
 
     enes_refA = calc_E(refA_coords, rep_ali_refA_coords, curr_k[irep])
     enes_refB = calc_E(refB_coords, rep_ali_refB_coords, curr_k[irep])
-    print(enes_refA)
-    print(enes_refB)
+#    print(enes_refA)
+#    print(enes_refB)
 #    for iatom, atom in enumerate(rep):
 #        enes_refA.append(calc_E(ref_coord_arr[0][iatom], atom, curr_k[irep]))
 #        enes_refB.append(calc_E(ref_coord_arr[1][iatom], atom, curr_k[irep]))

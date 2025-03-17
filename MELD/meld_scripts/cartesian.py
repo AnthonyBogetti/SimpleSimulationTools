@@ -16,7 +16,7 @@ frac = float(sys.argv[3])
 def calc_E(ref_coords, rep_coords, k):
     enes = []
     for iatom, ref_atom in enumerate(ref_coords):
-        rep_atom = ref_coords[iatom]
+        rep_atom = rep_coords[iatom]
         dx2 = (rep_atom[0] - ref_atom[0])**2
         dy2 = (rep_atom[1] - ref_atom[1])**2
         dz2 = (rep_atom[2] - ref_atom[2])**2

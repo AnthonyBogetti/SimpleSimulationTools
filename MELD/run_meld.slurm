@@ -9,6 +9,7 @@
 #SBATCH --time=12:00:00
 
 module load amber cuda12.2 openmpi
+conda activate sst
 
 N_REPS=4
 TOTAL_X=10

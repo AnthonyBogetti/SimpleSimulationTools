@@ -4,17 +4,24 @@ import os
 import re
 import subprocess
 import sys
+from prody import *
+from numba import njit
 
 status = sys.argv[1]
 exchange = int(sys.argv[2])
 prev_exchange = str((exchange-1)).zfill(5)
 frac = float(sys.argv[3])
 
-def calc_E(rep_coords, ref_coords, k):
-    dx2 = (rep_coords[0] - ref_coords[0])**2
-    dy2 = (rep_coords[1] - ref_coords[1])**2
-    dz2 = (rep_coords[2] - ref_coords[2])**2
-    return (k*dx2+k*dy2+k*dz2)
+@njit
+def calc_E(ref_coords, rep_coords, k):
+    enes = []
+    for iatom, ref_atom in enumerate(ref_coords):
+        rep_atom = ref_coords[iatom]
+        dx2 = (rep_atom[0] - ref_atom[0])**2
+        dy2 = (rep_atom[1] - ref_atom[1])**2
+        dz2 = (rep_atom[2] - ref_atom[2])**2
+        enes.append(k*dx2+k*dy2+k*dz2)
+    return enes
 
 def convert_list_to_string(numbers):
     numbers.sort()
@@ -44,7 +51,7 @@ ladder = np.loadtxt("ladder", dtype=str)
 reps = ladder[:,0]
 for rep in reps:
     repi = str(rep).zfill(3)
-    with open("meld.pdb."+repi, "w") as file:
+    with open("meld"+repi+".pdb", "w") as file:
         subprocess.run(['ambpdb', '-p', '../../common_files/4ake.prmtop', '-c', 'meld.rst.'+repi], stdout=file)
 
 entries = []
@@ -86,47 +93,66 @@ print(next_t, next_k)
 
 ref_folder_path = "../../common_files/refs"
 
-atoms = ["CA"]
+#atoms = ["CA"]
+#
+#ref_coords = []
+refs = []
 
-ref_coords = []
+for filename in sorted(glob.glob(os.path.join(ref_folder_path, "*.pdb"))):
+    refi = parsePDB(filename, subset="ca")
+    refs.append(refi)
+#    with open(filename, 'r') as file:
+#        coords = []
+#        lines = file.readlines()
+#        for line in lines:
+#            line = re.split(r'\s+', line)
+#            if line[0] == "ATOM":
+#                if line[2] in atoms:
+#                    coords.append([line[6], line[7], line[8]])
+#        ref_coords.append(coords)
+#
+#ref_coord_arr = np.array(ref_coords, dtype=float)
+#
+#rep_coords = []
 
-for filename in sorted(glob.glob(os.path.join(ref_folder_path, "ref.pdb.*"))):
-    with open(filename, 'r') as file:
-        coords = []
-        lines = file.readlines()
-        for line in lines:
-            line = re.split(r'\s+', line)
-            if line[0] == "ATOM":
-                if line[2] in atoms:
-                    coords.append([line[6], line[7], line[8]])
-        ref_coords.append(coords)
+reps = []
 
-ref_coord_arr = np.array(ref_coords, dtype=float)
-
-rep_coords = []
-
-for filename in sorted(glob.glob(os.path.join(".", "meld.pdb.*"))):
-    with open(filename, 'r') as file:
-        coords = []
-        lines = file.readlines()
-        for line in lines:
-            line = re.split(r'\s+', line)
-            if line[0] == "ATOM":
-                if line[2] in atoms:
-                    coords.append([line[6], line[7], line[8]])
-        rep_coords.append(coords)
-
-rep_coord_arr = np.array(rep_coords, dtype=float)
+for filename in sorted(glob.glob(os.path.join(".", "*.pdb"))):
+    repi = parsePDB(filename, subset="ca")
+    reps.append(repi)
+#    with open(filename, 'r') as file:
+#        coords = []
+#        lines = file.readlines()
+#        for line in lines:
+#            line = re.split(r'\s+', line)
+#            if line[0] == "ATOM":
+#                if line[2] in atoms:
+#                    coords.append([line[6], line[7], line[8]])
+#        rep_coords.append(coords)
+#
+#rep_coord_arr = np.array(rep_coords, dtype=float)
 
 next_refs = []
 next_sels = []
 
-for irep, rep in enumerate(rep_coord_arr):
-    enes_refA = []
-    enes_refB = []
-    for iatom, atom in enumerate(rep):
-        enes_refA.append(calc_E(ref_coord_arr[0][iatom], atom, curr_k[irep]))
-        enes_refB.append(calc_E(ref_coord_arr[1][iatom], atom, curr_k[irep]))
+#for irep, rep in enumerate(rep_coord_arr):
+for irep, rep in enumerate(reps):
+#    enes_refA = []
+#    enes_refB = []
+    rep_ali_refA, T = superpose(rep, refs[0])
+    rep_ali_refB, T = superpose(rep, refs[1])
+    refA_coords = refs[0].getCoords()
+    refB_coords = refs[1].getCoords()
+    rep_ali_refA_coords = rep_ali_refA.getCoords()
+    rep_ali_refB_coords = rep_ali_refB.getCoords()
+
+    enes_refA = calc_E(refA_coords, rep_ali_refA_coords, curr_k[irep])
+    enes_refB = calc_E(refB_coords, rep_ali_refB_coords, curr_k[irep])
+    print(enes_refA)
+    print(enes_refB)
+#    for iatom, atom in enumerate(rep):
+#        enes_refA.append(calc_E(ref_coord_arr[0][iatom], atom, curr_k[irep]))
+#        enes_refB.append(calc_E(ref_coord_arr[1][iatom], atom, curr_k[irep]))
     resi = np.arange(1,len(enes_refA)+1)
     fracA = int(len(enes_refA)*frac)
     fracB = int(len(enes_refB)*frac)
@@ -162,4 +188,4 @@ for irep, rep in enumerate(rep_coord_arr):
 
 with open("ladder", "w") as file:
     for idx, rep in enumerate(reps):
-        file.write(str(rep)+" "+str(next_t[idx])+" "+str(next_k[idx])+" "+str(next_refs[idx])+" "+str(next_sels[idx])+"\n")
+        file.write(str(idx)+" "+str(next_t[idx])+" "+str(next_k[idx])+" "+str(next_refs[idx])+" "+str(next_sels[idx])+"\n")
